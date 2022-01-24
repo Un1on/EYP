@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="lib/semantic/semantic.min.css">
+    <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/main2.css" />
+</head>
+
+<body>
+    <header>
+        <div class="container header">
+    
+          <div class="logo">
+            <a href="#"><img src="img/logo.svg" alt="" /><span class="d-none d-lg-block">Enjoy Your
+                Profit</span>
+              <span class="d-block d-lg-none">EYP</span>
+            </a>
+          </div>
+        </div>
+      </header>
+    <div class=" container pd-sm-0">
+
+        <div class="wrapper form4 form5 row">
+            <div class="col-lg-8 col-md-12 info-forms">
+                <img src="img/form3-mob-vec.png" class="d-block d-lg-none mob-vec" alt="">
+                <h3 class="col-lg-9 offset-lg-3">Start Enjoy Your Profit lidmaatschap in drie simpele stappen & ontvang 20 EURO
+                    cashback op je volgende aankoop bij Megekko</h3>
+
+                <div class="row">
+                    <div class="col-lg-3 d-lg-block d-none">
+                        <div class="form-step">
+            
+                          <div class="step-number active step1">1</div>
+                          <div class="step-decription active step1">Vul hier je naam, adres en e-mail in </div>
+            
+                          <div class="step-number step2">2</div>
+                          <div class="step-decription step2">Vul de gegevens in van je rekening, creditkaart of bankpas die u wilt gebruiken voor Enjoy Your Profit
+                          </div>
+            
+                          <div class="step-number step3">3</div>
+                          <div class="step-decription step3">Maak jouw eigen wachtwoord aan om u aan te melden voor Enjoy Your
+                            profit en klik op JA!</div>
+            
+                        </div>
+                      </div>
+                    <div class="col-lg-9">
+                        <form action="" id="form">
+                          <div class="first-step">
+                            <div class="form-step d-flex d-lg-none">
+                              <div class="step-number active">1</div>
+                              <div class="step-decription active">Vul hier je naam, adres en e-mail in </div>
+                            </div>
+                            <div class="input-block">
+                              <input type="text" placeholder="Voornaam" name="name">
+                            </div>
+                            <div class="input-block">
+                              <input type="text" placeholder="Achternaam" name="name2">
+                            </div>
+                            <div class="input-block">
+                              <input type="text" placeholder="E-mail" id="email" name="email">
+                            </div>
+                            <div class="input-block">
+                              <input type="text" placeholder="Herhaal e-mail" name="email2">
+                            </div>
+                            <div class="input-block ">
+                              <input type="text" placeholder="Straatnaam" name="street" />
+                            </div>
+                            <div class="input-block housenumber d-flex">
+                              <div class="input-blockmy">
+                                <input type="number" placeholder="Huisnummer" name="housenum" />
+                              </div>
+                              <div class="input-blockmy">
+                                <input type="text" placeholder="A" name="houselet" />
+                              </div>
+                            </div>
+                            <div class="input-block">
+                              <input type="text" placeholder="Plaatsnaam " name="town" />
+                            </div>
+                            <div class="input-block mb-80">
+                              <input type="number" placeholder="Postcode" name="postcode">
+                            </div>
+                          </div>
+                          <div class="second-step">
+                            <div class="form-step d-flex d-lg-none">
+                              <div class="step-number ">2</div>
+                              <div class="step-decription">Vul de gegevens in van je rekening, creditkaart of bankpas die u wilt gebruiken voor Enjoy Your Profit</div>
+                            </div>
+                            <div class="input-blockmy cardtype">
+                              <input id="cardtype" type="text" autocomplete="off" list="cardlist" name="cardtype"
+                                placeholder="Kies kaart" class="choose-card">
+                              <img src="img/payment.png" alt="" />
+                              <datalist id="cardlist">
+                                <option value="Mastercard"></option>
+                                <option value="Visa"></option>
+                              </datalist>
+                              </label>
+                            </div>
+                            <div class="input-block">
+                              <input type="number" placeholder="Kaartnr" name="cardnumber">
+                            </div>
+                            <!-- <input placeholder="Maand" type="text" class="m_y"> -->
+                            <div class="input-block mb-80">
+                              <div class="input-blockmy">
+                                <input id="month" list="monthlist" name="month" type="number" autocomplete="off" placeholder="Maand"
+                                  class="choose-month">
+                                <!-- <datalist id="monthlist">
+                                                    <option value="01"></option>
+                                                    <option value="02"></option>
+                                                    <option value="03"></option>
+                                                    <option value="04"></option>
+                                                    <option value="05"></option>
+                                                    <option value="06"></option>
+                                                    <option value="07"></option>
+                                                    <option value="08"></option>
+                                                    <option value="09"></option>
+                                                    <option value="10"></option>
+                                                    <option value="11"></option>
+                                                    <option value="12"></option>
+                                                </datalist> -->
+                                </label>
+                              </div>
+                              <div class="input-blockmy">
+                                <input id="year" list="yearlist" name="year" placeholder="Jaar " class="choose-year" type="number"
+                                  autocomplete="off">
+                                <datalist id="yearlist">
+                                  <!-- <option value="20">232</option>
+                                                    <option value="21"></option>
+                                                    <option value="22"></option>
+                                                    <option value="23"></option>
+                                                    <option value="24"></option>
+                                                    <option value="25"></option>
+                                                    <option value="26"></option>
+                                                    <option value="27"></option>
+                                                    <option value="28"></option>
+                                                    <option value="29"></option>
+                                                    <option value="30"></option>
+                                                    <option value="31"></option>
+                                                    <option value="32"></option> -->
+                                </datalist>
+                                </label>
+                              </div>
+                              <!-- <select class="ui search dropdown number-search m_y month" name="month">
+                                                <option value="">Month</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                              </select> -->
+                              <!-- <select class="ui search dropdown number-search mr-0  year" name="year" >
+                                                <option value="">Year</option>
+                                                <option value="20">20</option>
+                                                <option value="21">21</option>
+                                                <option value="22">22</option>
+                                                <option value="23">23</option>
+                                                <option value="24">24</option>
+                                                <option value="25">25</option>
+                                                <option value="26">26</option>
+                                                <option value="27">27</option>
+                                                <option value="28">28</option>
+                                                <option value="29">29</option>
+                                                <option value="30">30</option>
+                                              </select> -->
+                            </div>
+                          </div>
+                          <div class="third-step">
+                            <div class="form-step d-flex d-lg-none">
+                              <div class="step-number ">3</div>
+                              <div class="step-decription">Maak jouw eigen wachtwoord aan om u aan te melden voor Enjoy Your profit en klik op JA!</div>
+                            </div>
+                            <div class="input-block">
+                              <input type="password" placeholder="Wachtwoord" name="password" id="password">
+                              <a href="#" class="pass-hints d-sm-block d-none">Handige tips voor het aanmaken van wachtwoord</a>
+            
+                            </div>
+                            <div class="input-block">
+                              <input type="password" placeholder="Wachtwoord controleren" name="password2">
+                              <a href="#" class="pass-hints d-sm-none d-block">Handige tips voor het aanmaken van wachtwoord</a>
+                            </div>
+                          </div>
+                          <button class="join-but" type="submit">
+                            <div class="join-shadow"></div> JA Klik hier nu  
+              
+                          </button>
+                        </form>
+                      </div>
+                </div>
+                <div class="form1-footer col-lg-9 offset-lg-3">30 dagen gratis en daarna slechts 15,00 EURO per maand</div>
+            </div>
+            <div class="col-lg-4 col-md-12 banner">
+                <div class="banner-decription">
+                    <div class="banner-heading">Verzilver cashback elke keer dat je online shopt!</div>
+                    <p>Je ontvangt minimaal 10%  korting bij al jouw favoriete retailers met Enjoy Your Profit, 20 EURO cashbacks en nog meer voordelen</p>
+                    <ul>
+                      <Li>Heel simpel en makkelijk. Meld je aan en ontvang 20 EURO cashback op je volgende aankoop bij (klantnaam)</Li>
+                      <Li>Bespaar elke keer als je winkelt. Je spaart via Enjoy Your Profit automatisch cashback en dit wordt automatisch opgewaardeerd in je account en gestort op je rekening</Li>
+                      <Li>Ontvang 15 EURO maandelijkse ledenbonus bij (klantnaam)</Li>
+                      <Li>Bespaar tot 15% korting op al uw online aankopen met Enjoy Your Profit</Li>
+                      <Li>Eerste 30 dagen gratis proefperiode. Je kan op elk gewenst moment opzeggen via onze klantenservice, website en e-mail. Daarna slechts 15 EURO per maand</Li>
+                    </ul>
+                    <a href="#" class="pb-3 tx-dc-underline">
+                      <p class="mb-4">
+                        Klik hier voor meer informatie over de voordelen
+                      </p>
+                    </a>
+                    
+                  </div>
+                  <div class="d-flex banner4-discount">
+                    <div class="col-lg-6"><img src="img/discount20.png" alt="" class="discount20"> </div>
+                    <div class="col-lg-6"><img src="img/megekko.png" alt="">
+                    <div class="discount4-text"> <span>20 EURO</span><br> welkomstbonus </div>
+                    <div class="banner-text4">Op je volgende aankoop bij Megekko</div>
+                    </div>
+                  </div>
+                  <a href="#">
+                    <div class="banner-footer d-none d-lg-block">Enjoy Your Profit Algemene Voorwaarden en Privacy- en cookiebeleid</div>
+                  </a>
+            </div>
+        </div>
+        <footer> <a href="#">
+                <div class="banner-footer3 d-lg-none d-block">Enjoy Your Profit Algemene Voorwaarden en Privacy- en cookiebeleid
+                </div>
+            </a></footer>
+
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/pooper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="lib/semantic/semantic.min.js"></script>
+    <script src="js/validator.js"></script>
+    <script src="js/validator-methods.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/step.js"></script>
+    <script>
+        $("#form, #reg-form, signin-form").validate({});
+      </script>
+ 
+</body>
+
+</html>

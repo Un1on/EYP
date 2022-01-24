@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="lib/semantic/semantic.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/main2.css" />
+</head>
+
+<body>
+    <header>
+        <div class="container header">
+          <div class="logo">
+            <a href="#"><img src="img/logo.svg" alt="" /><span class="d-none d-lg-block">Enjoy Your
+                Profit</span>
+              <span class="d-block d-lg-none">EYP</span>
+            </a>
+          </div>
+        </div>
+      </header>
+    <div class="container pd-sm-0">
+        <div class="wrapper form2 row">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 info-forms">
+                    <span>Snel en eenvoudig onderstaande invullen.<br> En ontvang 15 EURO cashback op je volgende aankoop bij Megekko</span>
+
+                    <form action="" id="form">
+                        <div class="first-step">
+                            <div class="form-step">
+                                <div class="step-number active">1</div>
+                                <div class="step-decription active">Vul hier je naam, adres, en e-mail in</div>
+                            </div>
+                            <div class="input-block">
+                                <input type="text" placeholder="Voornaam" name="name">
+                            </div>
+                            <div class="input-block">
+                                <input type="text" placeholder="Achternaam" name="name2">
+                            </div>
+                            <div class="input-block">
+                                <input type="email" placeholder="E-mail" name="email" id="email">
+                            </div>
+                            <div class="input-block">
+                                <input type="text" placeholder="Herhaal e-mail" name="email2">
+                            </div>
+                            <div class="input-block ">
+                                <input type="text" placeholder="Straatnaam" name="street" />
+                              </div>
+                              <div class="input-block d-flex housenumber">
+                                <div class="input-blockmy">
+                                <input type="number" placeholder="Huisnummer" name="housenum" />
+                              </div>
+                              <div class="input-blockmy">
+                                <input type="text" placeholder="A" name="houselet" />
+                              </div>
+                              </div>
+                              <div class="input-block">
+                                <input type="text" placeholder="Plaatsnaam " name="town" />
+                              </div>
+                            <div class="input-block">
+                                <input type="number" placeholder="Postcode" class="" name="postcode">
+                            </div>
+                        </div>
+                        <div class="second-step">
+                            <div class="form-step">
+                                <div class="step-number ">2</div>
+                                <div class="step-decription">Vul je gegevens in van je rekening, creditcard of bankpas die je wilt gebruiken voor Enjoy Your Profit</div>
+                            </div>
+                            <div class="input-blockmy cardtype">
+                                <input id="cardtype" type="text" autocomplete="off" list="cardlist" name="cardtype"
+                                    placeholder="Kies kaart" class="choose-card">
+                                <img src="img/payment.png" alt="" />
+                                <datalist id="cardlist">
+                                    <option value="Mastercard"></option>
+                                    <option value="Visa"></option>
+                                </datalist>
+                                </label>
+                            </div>
+                            <div class="input-block">
+                                <input type="number" placeholder="Kaartnr" name="cardnumber">
+                            </div>
+                            <!-- <input placeholder="Maand" type="text" class="m_y"> -->
+                            <div class="input-block">
+                                <div class="input-blockmy">
+                                    <input id="month" list="monthlist" name="month" type="number" autocomplete="off"
+                                        placeholder="Maand" class="choose-month">
+                                    <!-- <datalist id="monthlist">
+                                        <option value="01"></option>
+                                        <option value="02"></option>
+                                        <option value="03"></option>
+                                        <option value="04"></option>
+                                        <option value="05"></option>
+                                        <option value="06"></option>
+                                        <option value="07"></option>
+                                        <option value="08"></option>
+                                        <option value="09"></option>
+                                        <option value="10"></option>
+                                        <option value="11"></option>
+                                        <option value="12"></option>
+                                    </datalist> -->
+                                    </label>
+                                </div>
+                                <div class="input-blockmy">
+                                    <input id="year" list="yearlist" name="year" placeholder="Jaar " class="choose-year"
+                                        type="number" autocomplete="off">
+                                    <datalist id="yearlist">
+                                        <!-- <option value="20">232</option>
+                                        <option value="21"></option>
+                                        <option value="22"></option>
+                                        <option value="23"></option>
+                                        <option value="24"></option>
+                                        <option value="25"></option>
+                                        <option value="26"></option>
+                                        <option value="27"></option>
+                                        <option value="28"></option>
+                                        <option value="29"></option>
+                                        <option value="30"></option>
+                                        <option value="31"></option>
+                                        <option value="32"></option> -->
+                                    </datalist>
+                                    </label>
+                                </div>
+                                <!-- <select class="ui search dropdown number-search m_y month" name="month">
+                                    <option value="">Month</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                  </select> -->
+                                <!-- <select class="ui search dropdown number-search mr-0  year" name="year" >
+                                    <option value="">Year</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                  </select> -->
+                            </div>
+                        </div>
+                        <div class="third-step">
+                            <div class="form-step">
+                                <div class="step-number">3</div>
+                                <div class="step-decription">Maak een wachtwoord aan om u aan te melden voor Enjoy Your Profit en klik op JA!</div>
+                            </div>
+                            <div class="input-block">
+                                <input type="password" placeholder="Wachtwoord" name="password" id="password">
+
+                            </div>
+                            <div class="input-block">
+                                <input type="password" placeholder="Wachtwoord controleren" name="password2">
+                                <a href="#" class="pass-hints">Handige tips voor het aanmaken van wachtwoord</a>
+
+                            </div>
+                        </div>
+
+                        <button class="join-but" type="submit">
+                            <div class="join-shadow"></div>JA! Klik nu hier!   
+                            
+                        </button>
+                        <!-- <p>I wish to benefit from my welcome check of 15 € at "Club desantages", 15% discounts from
+                            more
+                            than a hundred e-merchant partners, delivery reimbursed at my favorite merchant once a
+                            month
+                            for
+                            only 15 € per month and in addition the first 30 days are FREE!.</p> -->
+                    </form>
+
+                </div>
+                <div class="banner-footer2 col-lg-4 d-lg-none d-block">
+                    Enjoy Your Profit Algemene Voorwaarden en Privacy- en Cookiebeleid
+                </div>
+                <div class="col-lg-8 col-md-12 pd-l-0 gift-block">
+                    <div class="gift-welcome">Welkom en gefeliciteerd! Ontdek het aanbod van Enjoy Your Profit!</div>
+                    <div class="gift-body ">
+                        <div>
+                        <p>We zijn blij dat we jou een Welkomstbonus van 15 EURO bij (klantnaam) kunnen aanbieden op je volgende aankoop bij (klantnaam). Ook ontvang je tot 15% korting op al je aankopen en een maandelijkse ledenbonus van 15 EURO bij (klantnaam). Je ontvangt kortingen bij vele populaire online merken en profiteert van alle geldbesparende voordelen van Enjoy Your Profit! Bespaar elke keer als je winkelt en maak altijd gebruik van de vele mooie voordelen.</p>
+                        <div>
+                            <img src="img/gift.png" alt="" class="gift-png">
+                        </div>
+                        <h3>Drie simpele stappen voor makkelijk besparen</h3>
+                        <p class="text-center">Het is eenvoudig, we zorgen via ons spaarprogramma voor kortingen en cashbacks direct overgemaakt op je rekening. Het is de perfecte manier om geld te besparen op online aankopen </p>
+                        <div class="steps3">
+                            <div class="steps">
+                                <img src="img/1step.png" alt="" class="step">
+                                <img src="img/small-circle.png" alt="" class="circle">
+                                <img src="img/big-circle.png" alt="" class="d-block d-sm-none big-circle">
+                                <p>  Meld je aan</p>
+                            </div>
+                            <div class="steps">
+                                <img src="img/2step.png" alt="" class="step">
+                                <img src="img/small-circle.png" alt="" class="circle">
+                                <img src="img/big-circle.png" alt="" class="d-block d-sm-none big-circle">
+                                <p>Shop till you drop</p>
+                            </div>
+                            <div class="steps">
+                                <img src="img/3step.png" alt="" class="step">
+                                <img src="img/small-circle.png" alt="" class="circle">
+                                <img src="img/big-circle.png" alt="" class="d-block d-sm-none big-circle">
+                                <p>Cash op je rekening</p>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>Maak gebruik van welkomstbonus van 15 EURO cashback op je volgende aankoop bij (klantnaam) en alle andere voordelen van onze benefits club, maandelijkse ledenbonussen van 15 EURO en eerste 30 dagen is GRATIS uitproberen</li>
+                            <li>Korting tot 15% op al je online aankopen bij alle gerenommeerde merken via Enjoy Your Profit</li>
+                            <li>Bezorgaanbiedingen en ontvang geld terug bij iedere online aankoop</li>
+                            <li>Meld je GRATIS aan voor benefits club Enjoy Your Profit. Eerste 30 dagen proefperiode en daarna slechts 15 EURO per maand</li>
+                            <li>De benefits club klantenservice luistert goed naar jou en is ervoor je, zodat je kan genieten van alle Enjoy Your Profit voordelen</li>
+                        </ul>
+                    </div>
+                        <div class="discount-block"><img src="img/banner-discount2.png" alt=""> 
+                            <div>
+                            <div class="discount-text"><p>15 euro</p>welkomstbonus</div>
+                                <p class="discount-text2">Op je volgende aankoop bij Megekko</p>
+                            </div>
+                         <img src="img/megekko2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="banner-footer2 col-lg-4 d-lg-block d-none">
+                    Enjoy Your Profit Algemene Voorwaarden en Privacy- en Cookiebeleid
+                </div>
+            </div>
+            <div class="col-lg-12 contact-2">
+                Service Client
+
+                <a href="tel:+0556554768">
+                    <div>05 56 55 47 68</div>
+                </a>
+
+                <div class="work-time"><span>9-00 - 18-00</span><span>Monday - Friday</span>
+                </div>
+                <div class="arrow-image">
+                    <img src="img/arrow.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-12 rules">
+                <p>Offer reserved for residents of mainland France and people who are not already members of the Club
+                    desantages program. The General Conditions of Sale of the service apply. Our General Conditions of
+                    Sale can be viewed by clicking here: General Conditions of Sale . You have a question ? Need help
+                    registering? You can contact us at this address: ServiceClient@clubdesavantages.fr or by phone at:
+                    05 56 55 47 68 . If you wish to unsubscribe click on the attached withdrawal form : Withdrawal form
+                    . The Benefits Club program is owned and managed by the Monetize Angels group. © 2016, Monetize
+                    Angels Services SA with a capital of 31,000 euros - 5 rue des Primeurs L-2361 Stassen, Luxembourg -
+                    Registered in the Luxembourg Trade Register under number B 194.410 - Establishment authorization
+                    number 10054772/0, issued by Ministry of the Economy of the Grand Duchy of Luxembourg located at
+                    19-21 Boulevard Royal, 2449 Luxembourg - Intracommunity VAT number LU27520517.
+
+                </p>
+                <p>
+                    <div class="text-center">Terms of Service</div>
+                    By joining the Benefits Club, you benefit from a trial period of service for one month. You
+                    therefore benefit from a free service period the first month. This trial period covers the legal
+                    withdrawal period of 14 days that you have. You will only be charged membership fees after the
+                    expiration of this one month trial period. You can cancel your registration whenever you want by
+                    calling 05 56 55 47 68 (free call from a landline in mainland France) or online from your Account on
+                    the Club desantages website. If you decide to continue your subscription beyond the first month,
+                    Club desantages will charge a membership fee of € 15 each month on the anniversary date of your
+                    contract on the bank card whose details you have just entered. By typing your Password as signature
+                    and clicking on "YES Submit my payment" then accepting the offer with the second click on the "YES I
+                    validate" button, you authorize Club des Advantages to take your Membership Rights from the Bank
+                    card.
+
+                </p>
+                <p>To obtain any information on the Club Benefits Service, you can send us an e-mail to
+                    ServiceClient@ClubdesAvantages.fr or call customer service by dialing 05 56 55 47 68 (free call from
+                    a landline in mainland France).
+
+                </p>
+                <p class="text-center"> Terms of Sales
+
+                </p>
+                <p>Information relating to your personal data
+                    The data you enter is intended for the relevant services of Monetize Angels, for the purpose of
+                    concluding the contract with Monetize Angels, allowing in particular the creation of your user
+                    account. They are kept for the time necessary for the management of the commercial relationship.
+                    However, any data used to establish proof of a right or a contract, or kept for compliance with a
+                    legal or regulatory obligation, may be subject to an archiving policy, and be kept for this purpose
+                    in accordance with the provisions in force (limitation periods, legal storage obligations, etc.).
+                    The data collected via this form is not intended to be transferred to third parties and remains on
+                    the territory of the European Union.
+                </p>
+                <p>
+                    You have a right of access, rectification or erasure of personal data concerning you, and if
+                    necessary, a right to the portability of your data. You can request the limitation or oppose the
+                    processing of your data, or if necessary, withdraw your consent. You can also set guidelines for the
+                    fate of your data after you die.
+                    You can exercise these rights by writing to the following address: MONETIZE ANGELS, 5 rue des
+                    Primeurs L-2361 Strassen, Luxembourg or by email to the email address contact@clubdesavantages.fr .
+
+                </p>
+                <p class="text-center"> Our security systems encrypt your personal data to ensure confidentiality.</p>
+            </div>
+        </div>
+    </div>
+    <footer></footer>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/pooper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="lib/semantic/semantic.min.js"></script>
+    <script src="js/validator.js"></script>
+    <script src="js/validator-methods.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/step.js"></script>
+    <script>
+        $("#form, #reg-form, signin-form").validate({});
+      </script>
+</body>
+
+</html>

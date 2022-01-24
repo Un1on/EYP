@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="lib/semantic/semantic.min.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/main2.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container header">
+      <div class="logo">
+        <a href="#"><img src="img/logo.svg" alt="" /><span class="d-none d-lg-block">Enjoy Your
+            Profit</span>
+          <span class="d-block d-lg-none">EYP</span>
+        </a>
+      </div>
+    </div>
+  </header>
+  <div class="container pd-sm-0">
+    <div class="wrapper row">
+      <div class="col-lg-7 col-md-12 info-forms">
+        <img src="img/form3-mob-vec.png" class="d-block d-lg-none mob-vec" alt="">
+
+        <h3>
+          Gefeliciteerd!
+        <p>  Je ontvangt als gewaarde klant van megekko een korting van 15,00 EURO!</p>
+        </h3>
+        <form id="form" action="">
+          <div class="first-step">
+            <div class="input-block">
+              <input type="text" placeholder="Voornaam" name="name" />
+            </div>
+            <div class="input-block">
+              <input type="text" placeholder="Achternaam" name="name2" />
+            </div>
+            <div class="input-block">
+              <input type="email" placeholder="E-mail" name="email" id="email" />
+            </div>
+            <div class="input-block">
+              <input type="email" placeholder="Herhaal e-mail" name="email2" />
+            </div>
+            <div class="input-block">
+              <input type="text" placeholder="Straatnaam" name="street" />
+            </div>
+            <div class="input-block d-flex housenumber">
+              <div class="input-blockmy">
+              <input type="number" placeholder="Huisnummer" name="housenum" />
+            </div>
+            <div class="input-blockmy">
+              <input type="text" placeholder="A" name="houselet" />
+            </div>
+            </div>
+            <div class="input-block">
+              <input type="text" placeholder="Plaatsnaam " name="town" />
+            </div>
+            <div class="input-block mb-80">
+              <input type="number" placeholder="Postcode" name="postcode" />
+            </div>
+          </div>
+          <br />
+          <div class="second-step">
+            <!-- <select class="ui search dropdown choose-card" name="cardtype">
+              
+              <option value="">Kies kaart</option>
+              <option value="Mastercard">Mastercard</option>
+              <option value="Visa">Visa</option>
+            </select> -->
+            <div class="input-blockmy cardtype">
+              <input id="cardtype" type="text" autocomplete="off" list="cardlist" name="cardtype"
+                placeholder="Kies kaart" class="choose-card">
+              <img src="img/payment.png" alt="" />
+              <datalist id="cardlist">
+                <option value="Mastercard"></option>
+                <option value="Visa"></option>
+              </datalist>
+              </label>
+            </div>
+            <div class="input-block">
+              <input type="number" placeholder="Kaartnr" name="cardnumber" />
+            </div>
+
+            <!-- <input placeholder="Maand" type="text" class="m_y"> -->
+            <div class="input-block mb-80">
+              <div class="input-blockmy">
+                <input id="month" list="monthlist" name="month" type="number" autocomplete="off" placeholder="Maand"
+                  class="choose-month">
+                <!-- <datalist id="monthlist">
+                    <option value="01"></option>
+                    <option value="02"></option>
+                    <option value="03"></option>
+                    <option value="04"></option>
+                    <option value="05"></option>
+                    <option value="06"></option>
+                    <option value="07"></option>
+                    <option value="08"></option>
+                    <option value="09"></option>
+                    <option value="10"></option>
+                    <option value="11"></option>
+                    <option value="12"></option>
+                </datalist> -->
+                </label>
+              </div>
+              <div class="input-blockmy">
+                <input id="year" list="yearlist" name="year" placeholder="Jaar " class="choose-year" type="number"
+                  autocomplete="off">
+                <datalist id="yearlist">
+                  <!-- <option value="20">232</option>
+                    <option value="21"></option>
+                    <option value="22"></option>
+                    <option value="23"></option>
+                    <option value="24"></option>
+                    <option value="25"></option>
+                    <option value="26"></option>
+                    <option value="27"></option>
+                    <option value="28"></option>
+                    <option value="29"></option>
+                    <option value="30"></option>
+                    <option value="31"></option>
+                    <option value="32"></option> -->
+                </datalist>
+                </label>
+              </div>
+              <!-- <select class="ui search dropdown number-search m_y month" name="month">
+                <option value="">Month</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select> -->
+              <!-- <select class="ui search dropdown number-search mr-0  year" name="year" >
+                <option value="">Year</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+              </select> -->
+            </div>
+          </div>
+
+          <div class="third-step">
+            <div class="input-block">
+              <input type="password" placeholder="Wachtwoord" name="password" id="password" />
+              <a href="#" class="pass-hints d-none d-sm-block">Handige tips voor het aanmaken van wachtwoord</a>
+            </div>
+            <div class="input-block">
+              <input type="password" placeholder="Wachtwoord controleren" name="password2" />
+              <a href="#" class="pass-hints d-block d-sm-none">Handige tips voor het aanmaken van wachtwoord</a>
+            </div>
+          </div>
+          <button class="join-but" type="submit">
+            <div class="join-shadow"></div>
+            JA! Enjoy Your Benefits
+
+          </button>
+        </form>
+        <div class="form1-footer">
+          30 dagen gratis en daarna slecht 15,00 EURO per maand
+        </div>
+      </div>
+      <div class="col-lg-5 col-md-12 banner">
+        <a href="#">
+        <img src="img//megekko.png" alt="">
+      </a>
+      <img src="img/banner-vector.png" alt="" class="banner-vector">
+
+        <div class="banner-text1">
+          Gratis aanmelden<br> en ontvang vanaf vandaag
+        </div>
+        <div class="banner-text2">
+          tot <span class="percent">15%</span> korting
+        </div>
+        <div class="banner-text1">
+          op je volgende online aankopen
+        </div>
+        <div class="banner-text3">
+          Ook ontvang je 15,00 EURO aan maandelijkse ledenbonus
+        </div>
+        <img src="img/banner-discount.png" alt="" class="banner-discount">
+        <a href="#">
+          <div class="banner-footer">
+          <p>  Enjoy Your Profit Algemene Voorwaarden en Privacy- en Cookiebeleid
+          </div>
+        </a>
+      </div>
+    </div>
+    <footer></footer>
+  </div>
+  <script src="js/jquery.js"></script>
+  <script src="js/pooper.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="lib/semantic/semantic.min.js"></script>
+  <script src="js/validator.js"></script>
+  <script src="js/validator-methods.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    $("#form, #reg-form, signin-form").validate({});
+  </script>
+</body>
+
+</html>
